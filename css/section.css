@@ -1,0 +1,33 @@
+.section {
+    line-height: 1.5;
+}
+
+.section--centered {
+    text-align: center;
+    margin: 70px 0;
+}
+
+.section__image {
+    border-radius: 30px;
+    box-shadow: 2px 2px 2px 1px #e6e0e0;
+}
+
+.section__header {
+    color: #ff6f00;
+    font-size: 40px;
+    text-shadow: 1px 1px 1px black;
+}
+
+.section__paragraph {
+    padding: 0 40px;
+    font-size: 17px;
+}
+
+.section__subHeader {
+    padding: 10px 15px 20px;
+    color: #ff4545;
+}
+
+.section__listParagraph {
+    padding-left: 10px;
+}

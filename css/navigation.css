@@ -1,0 +1,31 @@
+.navigation {
+    font-size: 20px;
+}
+
+.navigation__list {
+    list-style: none;
+}
+
+.navigation__item {
+    display: inline-block;
+    margin-right: 50px;
+}
+
+.navigation__link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 21px;
+}
+
+.navigation__link:focus {   
+    outline: 2px solid;
+}
+
+.navigation__link:hover {
+    border-bottom: 2px solid;
+    outline: none;  
+}
+
+.navigation__link:active {
+    color: #b7b6b2 
+}
