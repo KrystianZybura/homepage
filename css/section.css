@@ -28,6 +28,10 @@
     color: #ff4545;
 }
 
-.section__listParagraph {
-    padding-left: 10px;
+.section__subList {
+    padding: 16px 10px;
+}
+
+.section__text {
+    list-style: none;
 }
