@@ -17,15 +17,15 @@
     font-size: 21px;
 }
 
-.navigation__link:focus {   
+.navigation__link:focus {
     outline: 2px solid;
 }
 
 .navigation__link:hover {
     border-bottom: 2px solid;
-    outline: none;  
+    outline: none;
 }
 
 .navigation__link:active {
-    color: #b7b6b2 
+    color: #b7b6b2
 }
