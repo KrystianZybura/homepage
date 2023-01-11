@@ -24,3 +24,7 @@
     font-size: 17px;
     cursor: pointer;
 }
+
+.header__button:hover {
+    background-color: #595959;
+}
