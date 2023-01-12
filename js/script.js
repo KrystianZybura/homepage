@@ -1,5 +1,5 @@
 {
-    const darkTheme = () => {
+    const toggleTheme = () => {
         const body = document.querySelector(".js-body");
         const header = document.querySelector(".js-header");
         const footer = document.querySelector(".js-footer");
@@ -15,18 +15,14 @@
             : "Ciemny";
     }
 
-    const onChangeThemeButton = () => {
-        darkTheme();
+    const ChangeThemeButton = () => {
+        toggleTheme();
         buttonTextChange();
     }
 
-    const changeTheme = () => {
-        const changeThemebutton = document.querySelector(".js-button");
-        changeThemebutton.addEventListener("click", onChangeThemeButton)
-    }
-
     const init = () => {
-        changeTheme();
+        const changeThemebutton = document.querySelector(".js-button");
+        changeThemebutton.addEventListener("click", ChangeThemeButton);
     }
 
     init();
