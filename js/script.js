@@ -11,21 +11,20 @@
 
     const toggleThemeName = () => {
         const themeName = document.querySelector(".js-themeName");
-
         themeName.innerText = themeName.innerText === "Ciemny"
             ? "Jasny"
             : "Ciemny";
     }
 
-    const changeThemeButton = () => {
+    const onChangeThemeButton = () => {
         toggleTheme();
         toggleThemeName();
     }
 
     const init = () => {
-        const changeThemebutton = document.querySelector(".js-button");
+        const changeThemeButton = document.querySelector(".js-button");
 
-        changeThemebutton.addEventListener("click", changeThemeButton);
+        changeThemeButton.addEventListener("click", onChangeThemeButton);
     }
 
     init();
