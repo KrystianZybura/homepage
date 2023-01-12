@@ -8,8 +8,10 @@
         header.classList.toggle("header--dark");
         footer.classList.toggle("footer--dark");
     }
+
     const toggleThemeName = () => {
         const themeName = document.querySelector(".js-themeName");
+
         themeName.innerText = themeName.innerText === "Ciemny"
             ? "Jasny"
             : "Ciemny";
@@ -22,6 +24,7 @@
 
     const init = () => {
         const changeThemebutton = document.querySelector(".js-button");
+
         changeThemebutton.addEventListener("click", changeThemeButton);
     }
 
