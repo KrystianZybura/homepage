@@ -15,14 +15,14 @@
             : "Ciemny";
     }
 
-    const ChangeThemeButton = () => {
+    const changeThemeButton = () => {
         toggleTheme();
         buttonTextChange();
     }
 
     const init = () => {
         const changeThemebutton = document.querySelector(".js-button");
-        changeThemebutton.addEventListener("click", ChangeThemeButton);
+        changeThemebutton.addEventListener("click", changeThemeButton);
     }
 
     init();
