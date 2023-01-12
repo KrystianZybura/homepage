@@ -8,16 +8,16 @@
         header.classList.toggle("header--dark");
         footer.classList.toggle("footer--dark");
     }
-    const buttonTextChange = () => {
-        const buttonText = document.querySelector(".js-buttonText");
-        buttonText.innerText = buttonText.innerText === "Ciemny"
+    const toggleThemeName = () => {
+        const themeName = document.querySelector(".js-themeName");
+        themeName.innerText = themeName.innerText === "Ciemny"
             ? "Jasny"
             : "Ciemny";
     }
 
     const changeThemeButton = () => {
         toggleTheme();
-        buttonTextChange();
+        toggleThemeName();
     }
 
     const init = () => {
