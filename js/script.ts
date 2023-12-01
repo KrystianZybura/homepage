@@ -1,8 +1,8 @@
 {
   const toggleTheme = (): void => {
-    const body = document.querySelector(".js-body") as HTMLElement | null;
-    const header = document.querySelector(".js-header") as HTMLElement;
-    const footer = document.querySelector(".js-footer") as HTMLElement | null;
+    const body: HTMLElement | null = document.querySelector(".js-body");
+    const header: HTMLElement | null = document.querySelector(".js-header");
+    const footer: HTMLElement | null = document.querySelector(".js-footer");
 
     if (body && header && footer) {
       body.classList.toggle("body--dark");
@@ -12,9 +12,8 @@
   };
 
   const toggleThemeName = (): void => {
-    const themeName = document.querySelector(
-      ".js-themeName"
-    ) as HTMLElement | null;
+    const themeName: HTMLElement | null =
+      document.querySelector(".js-themeName");
 
     if (themeName) {
       themeName.innerText =
@@ -28,9 +27,7 @@
   };
 
   const init = (): void => {
-    const changeThemeButton = document.querySelector(
-      ".js-button"
-    ) as HTMLElement | null;
+    const changeThemeButton = document.querySelector(".js-button");
 
     if (changeThemeButton) {
       changeThemeButton.addEventListener("click", onChangeThemeButton);
