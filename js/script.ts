@@ -1,24 +1,18 @@
 {
   const toggleTheme = (): void => {
-    const body: HTMLElement | null = document.querySelector(".js-body");
-    const header: HTMLElement | null = document.querySelector(".js-header");
-    const footer: HTMLElement | null = document.querySelector(".js-footer");
+    const body = document.querySelector(".js-body") as HTMLElement;
+    const header = document.querySelector(".js-header") as HTMLElement;
+    const footer = document.querySelector(".js-footer") as HTMLElement;
 
-    if (body && header && footer) {
-      body.classList.toggle("body--dark");
-      header.classList.toggle("header--dark");
-      footer.classList.toggle("footer--dark");
-    }
+    body.classList.toggle("body--dark");
+    header.classList.toggle("header--dark");
+    footer.classList.toggle("footer--dark");
   };
 
   const toggleThemeName = (): void => {
-    const themeName: HTMLElement | null =
-      document.querySelector(".js-themeName");
+    const themeName = document.querySelector(".js-themeName") as HTMLElement;
 
-    if (themeName) {
-      themeName.innerText =
-        themeName.innerText === "Ciemny" ? "Jasny" : "Ciemny";
-    }
+    themeName.innerText = themeName.innerText === "Ciemny" ? "Jasny" : "Ciemny";
   };
 
   const onChangeThemeButton = (): void => {
@@ -29,9 +23,7 @@
   const init = (): void => {
     const changeThemeButton = document.querySelector(".js-button");
 
-    if (changeThemeButton) {
-      changeThemeButton.addEventListener("click", onChangeThemeButton);
-    }
+    changeThemeButton!.addEventListener("click", onChangeThemeButton);
   };
 
   init();
